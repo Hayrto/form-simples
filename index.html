@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/assets/form.jpg">
+
+  </head>
+  <script type="text/javascript">
+    function show_confirm()
+    {
+      var r=confirm("certeza que deseja enviar esse formulário?");
+      if (r==true)
+      {
+        alert ("obrigado pelo seu tempo , entraremos em contato!");
+      }
+      else
+      {
+        alert("Vamos reiniciar o formulário e fazer com calma , Tudo Bem ?");
+      }
+    }
+
+  </script>
+  <body>
+    <main>
+      <h1>form aleatório</h1>
+
+   
+      <form action="#" class="form">
+        <div class="form-item">
+          <input
+          
+            type="text"
+            class="form-input success"
+            placeholder="primeiro nome"
+            aria-label="Primeiro nome"
+            required 
+          />
+        </div>
+
+        <div class="form-item">
+            <input
+              type="text"
+              class="form-input success"
+              placeholder="segundo nome"
+              aria-label="segundo nome"
+              required
+            />
+          </div>
+        
+
+        <div class="form-item">
+          <input
+            type="email"
+            class="form-input"
+            placeholder="email"
+            aria-label="email"
+            required
+          />
+        </div>
+
+        <div class="form-item">
+          <textarea name="feedback" class="form-input form-text" cols="30" rows="10" placeholder="dê o seu feedback sobre o que achou"></textarea>
+        </div>
+     <button class="form-input, form-buttom " type="submit" onClick="show_confirm()">aperta aqui xará</button>
+      </form>
+      <!-- "tira esse cu de dentro do parenteses"
+kael,mika 2022       -->
+    </main>
+  </body>
+</html>
